@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Nav from './components/Nav'
 import Home from './pages/Home'
 import Pricing from './pages/Pricing'
+import OnlineSessions from './pages/OnlineSessions'
 import './App.css';
 
 export default function App() {
@@ -23,8 +24,8 @@ export default function App() {
       <main>
         {route === 'home' && <Home />}
         {route === 'pricing' && <Pricing />}
-        {/* {route === 'online' && <OnlineSessions />}
-        {route === 'announcements' && <Announcements />}
+        {route === 'online' && <OnlineSessions />}
+        {/* {route === 'announcements' && <Announcements />}
         {route === 'top' && <TopMembers />}
         {route === 'drinks' && <Inventory />}
         {route === 'top-debtors' && <TopDebtors />}
