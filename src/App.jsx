@@ -1,26 +1,36 @@
-import logo from './logo.svg';
+import React, { useState, useEffect } from 'react';
+import Nav from './components/Nav'
+import Home from './pages/Home'
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>Hello Vite!</h1>
-        <p>
-          Edit <code>src/App.jsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+export default function App() {
+  const [route, setRoute] = useState('home')
 
-export default App;
+  // Initialize theme from localStorage or default to 'dark'
+  const [theme, setTheme] = useState(() => localStorage.getItem('theme') || 'dark')
+
+  console.log('App rendering, current route:', route)
+  
+  useEffect(() => {
+    console.log('App mounted')
+    document.documentElement.setAttribute('data-theme', theme)
+    localStorage.setItem('theme', theme)
+  }, [theme])
+  return (
+    <div className="app">
+      <Nav route={route} setRoute={setRoute} />
+      <main>
+        {route === 'home' && <Home />}
+        {/* {route === 'pricing' && <Pricing />}
+        {route === 'online' && <OnlineSessions />}
+        {route === 'announcements' && <Announcements />}
+        {route === 'top' && <TopMembers />}
+        {route === 'drinks' && <Inventory />}
+        {route === 'top-debtors' && <TopDebtors />}
+        {route === 'settings' && <Settings theme={theme} setTheme={setTheme} />}
+        {route === 'login' && <Login />}
+        {route === 'logout' && <Logout />} */}
+      </main>
+    </div>
+  )
+}
