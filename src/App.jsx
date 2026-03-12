@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Nav from './components/Nav'
 import Home from './pages/Home'
+import Pricing from './pages/Pricing'
 import './App.css';
 
 export default function App() {
@@ -10,7 +11,7 @@ export default function App() {
   const [theme, setTheme] = useState(() => localStorage.getItem('theme') || 'dark')
 
   console.log('App rendering, current route:', route)
-  
+
   useEffect(() => {
     console.log('App mounted')
     document.documentElement.setAttribute('data-theme', theme)
@@ -21,8 +22,8 @@ export default function App() {
       <Nav route={route} setRoute={setRoute} />
       <main>
         {route === 'home' && <Home />}
-        {/* {route === 'pricing' && <Pricing />}
-        {route === 'online' && <OnlineSessions />}
+        {route === 'pricing' && <Pricing />}
+        {/* {route === 'online' && <OnlineSessions />}
         {route === 'announcements' && <Announcements />}
         {route === 'top' && <TopMembers />}
         {route === 'drinks' && <Inventory />}
