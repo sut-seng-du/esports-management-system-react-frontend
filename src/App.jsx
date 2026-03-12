@@ -8,6 +8,8 @@ import Settings from './pages/Settings'
 import Login from './pages/Login'
 import Logout from './pages/Logout'
 import Inventory from './pages/Inventory'
+import TopMembers from './pages/TopMembers'
+import TopDebtors from './pages/TopDebtors'
 
 import './App.css';
 
@@ -32,9 +34,9 @@ export default function App() {
         {route === 'pricing' && <Pricing />}
         {route === 'online' && <OnlineSessions />}
         {route === 'announcements' && <Announcements />}
-        {/* {route === 'top' && <TopMembers />} */}
+        {route === 'top' && <TopMembers />}
         {route === 'drinks' && <Inventory />}
-        {/* {route === 'top-debtors' && <TopDebtors />} */}
+        {route === 'top-debtors' && <TopDebtors />}
         {route === 'settings' && <Settings theme={theme} setTheme={setTheme} />}
         {route === 'login' && <Login />}
         {route === 'logout' && <Logout />}
