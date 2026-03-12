@@ -3,6 +3,7 @@ import Nav from './components/Nav'
 import Home from './pages/Home'
 import Pricing from './pages/Pricing'
 import OnlineSessions from './pages/OnlineSessions'
+import Announcements from './pages/Announcements'
 import './App.css';
 
 export default function App() {
@@ -25,8 +26,8 @@ export default function App() {
         {route === 'home' && <Home />}
         {route === 'pricing' && <Pricing />}
         {route === 'online' && <OnlineSessions />}
-        {/* {route === 'announcements' && <Announcements />}
-        {route === 'top' && <TopMembers />}
+        {route === 'announcements' && <Announcements />}
+        {/* {route === 'top' && <TopMembers />}
         {route === 'drinks' && <Inventory />}
         {route === 'top-debtors' && <TopDebtors />}
         {route === 'settings' && <Settings theme={theme} setTheme={setTheme} />}
