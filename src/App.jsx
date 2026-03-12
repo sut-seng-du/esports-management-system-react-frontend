@@ -4,6 +4,9 @@ import Home from './pages/Home'
 import Pricing from './pages/Pricing'
 import OnlineSessions from './pages/OnlineSessions'
 import Announcements from './pages/Announcements'
+import Settings from './pages/Settings'
+import Login from './pages/Login'
+import Logout from './pages/Logout'
 import './App.css';
 
 export default function App() {
@@ -29,10 +32,10 @@ export default function App() {
         {route === 'announcements' && <Announcements />}
         {/* {route === 'top' && <TopMembers />}
         {route === 'drinks' && <Inventory />}
-        {route === 'top-debtors' && <TopDebtors />}
+        {route === 'top-debtors' && <TopDebtors />} */}
         {route === 'settings' && <Settings theme={theme} setTheme={setTheme} />}
         {route === 'login' && <Login />}
-        {route === 'logout' && <Logout />} */}
+        {route === 'logout' && <Logout />}
       </main>
     </div>
   )
