@@ -12,6 +12,7 @@ import {
     Menu,
     ChevronLeft,
     ChevronRight,
+    Calendar,
 } from 'lucide-react'
 import rcProfile from '../assets/rc-profile.png'
 
@@ -42,6 +43,7 @@ export default function Nav({ route, setRoute }) {
     const token = localStorage.getItem('token')
     if (token) {
         menuItems.push(
+            { key: 'bookings', label: 'Bookings', icon: <Calendar size={20} /> },
             { key: 'drinks', label: 'Drinks', icon: <CupSoda size={20} /> },
             { key: 'top', label: 'Top Members', icon: <Trophy size={20} /> },
             { key: 'top-debtors', label: 'Top Debtors', icon: <Banknote size={20} /> },

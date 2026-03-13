@@ -10,6 +10,7 @@ import Logout from './pages/Logout'
 import Inventory from './pages/Inventory'
 import TopMembers from './pages/TopMembers'
 import TopDebtors from './pages/TopDebtors'
+import Bookings from './pages/Bookings'
 
 import './App.css';
 
@@ -40,6 +41,7 @@ export default function App() {
         {route === 'settings' && <Settings theme={theme} setTheme={setTheme} />}
         {route === 'login' && <Login />}
         {route === 'logout' && <Logout />}
+        {route === 'bookings' && <Bookings />}
       </main>
     </div>
   )
