@@ -623,7 +623,7 @@ main {
 }
 
 .cg-sidebar {
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   height: 100vh;
@@ -1353,6 +1353,7 @@ main {
 [data-theme="dark"] .glass-card-premium {
   background: rgba(15, 23, 42, 0.3);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+  color: #ffffff;
 }
 
 .hover-glow:hover {

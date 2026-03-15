@@ -31,7 +31,7 @@ export default function App() {
     <div className="app">
       <Nav route={route} setRoute={setRoute} />
       <main>
-        {route === 'home' && <Home />}
+        {route === 'home' && <Home setRoute={setRoute} />}
         {route === 'pricing' && <Pricing />}
         {route === 'online' && <OnlineSessions />}
         {route === 'announcements' && <Announcements />}

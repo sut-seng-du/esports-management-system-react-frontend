@@ -16,7 +16,16 @@ import {
 import HERO_BG from '../assets/esports_hero_bg.jpg'
 import GEAR_IMAGE from '../assets/gaming_setup_detail.jpg'
 
-export default function Home() {
+export default function Home({ setRoute }) {
+    const handleBookRig = () => {
+        const token = localStorage.getItem('token');
+        if (token) {
+            setRoute('bookings');
+        } else {
+            setRoute('login');
+        }
+    }
+
     const container = {
         hidden: { opacity: 0 },
         show: {
@@ -124,12 +133,14 @@ export default function Home() {
                                 <button
                                     className="cg-btn cg-btn-primary hover-glow"
                                     style={{ width: 'auto', padding: '16px 32px', borderRadius: '14px', display: 'flex', alignItems: 'center', gap: '10px' }}
+                                    onClick={handleBookRig}
                                 >
                                     Book Your RIG <ChevronRight size={20} />
                                 </button>
                                 <button
                                     className="cg-btn glass-card-premium"
                                     style={{ width: 'auto', padding: '16px 32px', borderRadius: '14px', border: '1px solid var(--cg-border)' }}
+                                    onClick={() => setRoute('announcements')}
                                 >
                                     View Tournaments
                                 </button>
