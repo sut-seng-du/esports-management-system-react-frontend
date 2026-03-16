@@ -75,10 +75,15 @@ export default function TopDebtors() {
         }}
       >
         <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
-          <label className="cg-input-label cg-text-body" style={{ fontSize: '0.85rem', fontWeight: 'bold' }}>
+          <label 
+            htmlFor="result-limit"
+            className="cg-input-label cg-text-body" 
+            style={{ fontSize: '0.85rem', fontWeight: 'bold' }}
+          >
             Result Limit
           </label>
           <input
+            id="result-limit"
             type="number"
             min={1}
             max={100}
@@ -90,7 +95,11 @@ export default function TopDebtors() {
         </div>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '6px', gridColumn: 'auto / span 2' }}>
-          <label className="cg-input-label cg-text-body" style={{ fontSize: '0.85rem', fontWeight: 'bold' }}>
+          <label 
+            htmlFor="filter-date"
+            className="cg-input-label cg-text-body" 
+            style={{ fontSize: '0.85rem', fontWeight: 'bold' }}
+          >
             Filter by Date
           </label>
           <div
@@ -116,6 +125,7 @@ export default function TopDebtors() {
             </select>
 
             <input
+              id="filter-date"
               type="date"
               value={date && date !== 'today' ? date : ''}
               onChange={(e) => { setDate(e.target.value); setMonth('') }}
@@ -139,10 +149,15 @@ export default function TopDebtors() {
         </div>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
-          <label className="cg-input-label cg-text-body" style={{ fontSize: '0.85rem', fontWeight: 'bold' }}>
+          <label 
+            htmlFor="filter-month"
+            className="cg-input-label cg-text-body" 
+            style={{ fontSize: '0.85rem', fontWeight: 'bold' }}
+          >
             Or Filter by Month
           </label>
           <input
+            id="filter-month"
             type="month"
             value={month}
             onChange={(e) => { setMonth(e.target.value); setDate('') }}

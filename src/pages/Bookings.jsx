@@ -302,8 +302,14 @@ export default function Bookings() {
               <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '20px' }}>
                    <div className="form-group">
-                    <label style={{ display: 'block', marginBottom: '8px', fontSize: '0.85rem', color: 'var(--cg-text-muted)', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Date</label>
+                    <label 
+                      htmlFor="booking-date"
+                      style={{ display: 'block', marginBottom: '8px', fontSize: '0.85rem', color: 'var(--cg-text-muted)', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '0.5px' }}
+                    >
+                      Date
+                    </label>
                     <input
+                      id="booking-date"
                       type="date"
                       className="cg-input"
                       value={formData.date}
@@ -313,8 +319,14 @@ export default function Bookings() {
                   </div>
                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px' }}>
                     <div className="form-group">
-                      <label style={{ display: 'block', marginBottom: '8px', fontSize: '0.85rem', color: 'var(--cg-text-muted)', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Start</label>
+                      <label 
+                        htmlFor="booking-start"
+                        style={{ display: 'block', marginBottom: '8px', fontSize: '0.85rem', color: 'var(--cg-text-muted)', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '0.5px' }}
+                      >
+                        Start
+                      </label>
                       <input
+                        id="booking-start"
                         type="time"
                         className="cg-input"
                         value={formData.start_time}
@@ -323,8 +335,14 @@ export default function Bookings() {
                       />
                     </div>
                     <div className="form-group">
-                      <label style={{ display: 'block', marginBottom: '8px', fontSize: '0.85rem', color: 'var(--cg-text-muted)', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '0.5px' }}>End</label>
+                      <label 
+                        htmlFor="booking-end"
+                        style={{ display: 'block', marginBottom: '8px', fontSize: '0.85rem', color: 'var(--cg-text-muted)', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '0.5px' }}
+                      >
+                        End
+                      </label>
                       <input
+                        id="booking-end"
                         type="time"
                         className="cg-input"
                         value={formData.end_time}
