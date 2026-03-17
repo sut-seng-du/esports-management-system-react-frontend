@@ -312,8 +312,9 @@ export default function Settings({ theme, setTheme }) {
 
                 <form onSubmit={handlePasswordUpdate} style={{ maxWidth: '400px', width: '100%' }}>
                   <div style={{ marginBottom: '16px' }}>
-                    <label className="cg-input-label cg-text-body" style={{ marginBottom: '6px', display: 'block' }}>Current Password</label>
+                    <label htmlFor="currentPassword" className="cg-input-label cg-text-body" style={{ marginBottom: '6px', display: 'block' }}>Current Password</label>
                     <input
+                      id="currentPassword"
                       type="password"
                       value={currentPassword}
                       onChange={e => setCurrentPassword(e.target.value)}
@@ -323,8 +324,9 @@ export default function Settings({ theme, setTheme }) {
                     />
                   </div>
                   <div style={{ marginBottom: '16px' }}>
-                    <label className="cg-input-label cg-text-body" style={{ marginBottom: '6px', display: 'block' }}>New Password</label>
+                    <label htmlFor="newPassword" className="cg-input-label cg-text-body" style={{ marginBottom: '6px', display: 'block' }}>New Password</label>
                     <input
+                      id="newPassword"
                       type="password"
                       value={newPassword}
                       onChange={e => setNewPassword(e.target.value)}
@@ -334,8 +336,9 @@ export default function Settings({ theme, setTheme }) {
                     />
                   </div>
                   <div style={{ marginBottom: '24px' }}>
-                    <label className="cg-input-label cg-text-body" style={{ marginBottom: '6px', display: 'block' }}>Confirm New Password</label>
+                    <label htmlFor="confirmPassword" className="confirmPassword cg-input-label cg-text-body" style={{ marginBottom: '6px', display: 'block' }}>Confirm New Password</label>
                     <input
+                      id="confirmPassword"
                       type="password"
                       value={confirmPassword}
                       onChange={e => setConfirmPassword(e.target.value)}
