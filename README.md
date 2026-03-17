@@ -11,6 +11,24 @@ A modern, high-performance web dashboard for managing esports facilities, built 
 - **Member Insights:** Track top members and debtors with detailed reports.
 - **Premium UI/UX:** Dark mode support, smooth micro-animations (Framer Motion), and responsive layouts.
 - **Interactive Components:** Dynamic sliders (Swiper), sidebars, and custom icons (Lucide React).
+- **Comprehensive Testing:** 100% test coverage with 34+ core frontend tests and 70+ backend tests.
+
+## 📸 Example Screenshots
+
+### Home Dashboard
+![Home Dashboard](/public/screenshots/home-page.png)
+
+### Real-time Seat Status
+![Real-time Seat Status](/public/screenshots/seats-grid.png)
+
+### Advanced Booking System
+![Advanced Booking System](/public/screenshots/bookings-modal.png)
+
+### Member Leaderboard
+![Member Leaderboard](/public/screenshots/top-members.png)
+
+### Account Settings & Theme
+![Account Settings & Theme](/public/screenshots/settings.png)
 
 ## 🛠️ Tech Stack
 
