@@ -41,18 +41,23 @@ A modern, high-performance web dashboard for managing esports facilities, built 
 - **Networking:** [Axios](https://axios-http.com/)
 - **Testing:** [Jest](https://jestjs.io/) & [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
 
+## 🔗 Backend Repository
+
+The backend for this application is built with Laravel and can be found here:
+[Esports Management System - Laravel Backend](https://github.com/sut-seng-du/esports-management-system-laravel-backend)
+
 ## 📋 Requirements
 
 Before you begin, ensure you have the following installed:
 - [Node.js](https://nodejs.org/) (v16.0.0 or higher recommended)
 - [npm](https://www.npmjs.com/) (usually comes with Node.js)
-- A local backend server (running on XAMPP or similar as per configuration)
+- [Backend Server](https://github.com/sut-seng-du/esports-management-system-laravel-backend) (built with Laravel, running on XAMPP or similar)
 
 ## 🚀 Installation & Setup
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/esports-management-system-react-frontend.git
+   git clone https://github.com/sut-seng-du/esports-management-system-react-frontend.git
    cd esports-management-system-react-frontend
    ```
 
