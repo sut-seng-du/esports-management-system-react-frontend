@@ -1,8 +1,12 @@
 # Esports Management System - React Frontend
 
+[![Platform: Web](https://img.shields.io/badge/Platform-Web-3178C6?style=flat-square)](https://reactjs.org/)
+[![React Version](https://img.shields.io/badge/React-18.2.0-61DAFB?style=flat-square&logo=react&logoColor=white)](https://reactjs.org/)
+[![Project Version](https://img.shields.io/badge/Version-0.1.0-4CAF50?style=flat-square)](https://github.com/sut-seng-du/esports-management-system-react-frontend)
+
 A modern, high-performance web dashboard for managing esports facilities, built with React and Vite. This frontend provides a premium user interface for tracking bookings, inventory, pricing, and member details with a focus on visual excellence and smooth user experience.
 
-## ✨ Features
+## Features
 
 - **Dynamic Dashboard:** Real-time overview of facility operations.
 - **Advanced Booking System:** Manage and track seat bookings with ease.
@@ -13,7 +17,7 @@ A modern, high-performance web dashboard for managing esports facilities, built 
 - **Interactive Components:** Dynamic sliders (Swiper), sidebars, and custom icons (Lucide React).
 - **Comprehensive Testing:** 100% test coverage with 34+ core frontend tests and 70+ backend tests.
 
-## 📸 Example Screenshots
+## Example Screenshots
 
 ### Home Dashboard
 ![Home Dashboard](/public/screenshots/home-page.png)
@@ -30,7 +34,7 @@ A modern, high-performance web dashboard for managing esports facilities, built 
 ### Account Settings & Theme
 ![Account Settings & Theme](/public/screenshots/settings.png)
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Framework:** [React 18](https://reactjs.org/)
 - **Build Tool:** [Vite](https://vitejs.dev/)
@@ -41,19 +45,19 @@ A modern, high-performance web dashboard for managing esports facilities, built 
 - **Networking:** [Axios](https://axios-http.com/)
 - **Testing:** [Jest](https://jestjs.io/) & [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
 
-## 🔗 Backend Repository
+## Backend Repository
 
 The backend for this application is built with Laravel and can be found here:
 [Esports Management System - Laravel Backend](https://github.com/sut-seng-du/esports-management-system-laravel-backend)
 
-## 📋 Requirements
+## Requirements
 
 Before you begin, ensure you have the following installed:
 - [Node.js](https://nodejs.org/) (v16.0.0 or higher recommended)
 - [npm](https://www.npmjs.com/) (usually comes with Node.js)
 - [Backend Server](https://github.com/sut-seng-du/esports-management-system-laravel-backend) (built with Laravel, running on XAMPP or similar)
 
-## 🚀 Installation & Setup
+## Installation & Setup
 
 1. **Clone the repository:**
    ```bash
@@ -78,21 +82,21 @@ Before you begin, ensure you have the following installed:
    ```
    The application will be available at `http://localhost:5173`.
 
-## 💻 Available Scripts
+## Available Scripts
 
 - `npm run dev`: Starts the Vite development server.
 - `npm run build`: Builds the production-ready application in the `dist/` folder.
 - `npm run preview`: Previews the local production build.
 - `npm run test`: Runs the Jest test suite.
 
-## 🧪 Testing
+## Testing
 
 The project uses Jest and React Testing Library for unit and integration testing.
 ```bash
 npm run test
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```text
 src/
@@ -105,6 +109,6 @@ src/
 └── index.css       # Core design system and global styles
 ```
 
-## 📄 License
+## License
 
 This project is private and for internal use.
