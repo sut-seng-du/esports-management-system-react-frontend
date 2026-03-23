@@ -3,6 +3,7 @@
 [![Platform: Web](https://img.shields.io/badge/Platform-Web-3178C6?style=flat-square)](https://reactjs.org/)
 [![React Version](https://img.shields.io/badge/React-18.2.0-61DAFB?style=flat-square&logo=react&logoColor=white)](https://reactjs.org/)
 [![Project Version](https://img.shields.io/badge/Version-0.1.0-4CAF50?style=flat-square)](https://github.com/sut-seng-du/esports-management-system-react-frontend)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-FF5722?style=flat-square&logo=browser&logoColor=white)](https://esports-client.sutsengdu.com)
 
 A modern, high-performance web dashboard for managing esports facilities, built with React and Vite. This frontend provides a premium user interface for tracking bookings, inventory, pricing, and member details with a focus on visual excellence and smooth user experience.
 
@@ -16,6 +17,10 @@ A modern, high-performance web dashboard for managing esports facilities, built 
 - **Premium UI/UX:** Dark mode support, smooth micro-animations (Framer Motion), and responsive layouts.
 - **Interactive Components:** Dynamic sliders (Swiper), sidebars, and custom icons (Lucide React).
 - **Comprehensive Testing:** 100% test coverage with 34+ core frontend tests and 70+ backend tests.
+
+## Live Demo
+
+Experience the live application here: **[esports-client.sutsengdu.com](https://esports-client.sutsengdu.com)**
 
 ## Example Screenshots
 

@@ -9,9 +9,9 @@ export default function Logout() {
         // Always clear local storage and redirect
         localStorage.removeItem('token')
         localStorage.removeItem('user')
-        
+
         // Hard redirect to ensure state is cleared
-        window.location.href = '/login'
+        window.location.href = ''
       })
   }, [])
 
